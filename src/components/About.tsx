@@ -10,7 +10,7 @@ export default function About() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="about" className="py-20 md:py-28 px-6" ref={ref}>
+    <section id="about" className="pt-4 pb-10 px-6" ref={ref}>
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -28,10 +28,10 @@ export default function About() {
 
           <div className="space-y-6 text-text-secondary leading-relaxed text-base md:text-lg">
             <p>
-              I&apos;m a visionary entrepreneur and creative professional driven
+              I'm a visionary entrepreneur and creative professional driven
               by impact, innovation, and purpose. My journey spans multiple
-              industries — from creative services and digital platforms to
-              logistics, business development, and pet care — each built on the
+              industries, from creative services and digital platforms to
+              logistics, business development, and pet care, each built on the
               same foundation: turning ideas into meaningful, sustainable
               ventures.
             </p>
@@ -47,12 +47,12 @@ export default function About() {
             <p>
               Whether developing platforms that connect businesses and clients,
               telling powerful stories through visual content, or providing
-              reliable products and services for pet owners — my focus remains
+              reliable products and services for pet owners, my focus remains
               the same: <span className="text-accent font-medium">value, excellence, and long-term growth</span>.
             </p>
 
             <p>
-              I believe great brands are not just seen — they&apos;re felt. That
+              I believe great brands are not just seen, they&apos;re felt. That
               belief, grounded in faith and purpose, guides everything I build,
               collaborate on, and put into the world.
             </p>

@@ -1,7 +1,5 @@
 "use client";
 
-import { FaHeart } from "react-icons/fa";
-
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -18,11 +16,6 @@ export default function Footer() {
           &copy; {currentYear}{" "}
           <span className="text-accent font-medium">Baycarl</span> LLC. All
           rights reserved.
-        </p>
-
-        <p className="text-text-secondary/50 text-xs mt-3 flex items-center justify-center gap-1">
-          Built with <FaHeart className="text-accent/50 text-[10px]" /> purpose
-          and faith
         </p>
       </div>
     </footer>

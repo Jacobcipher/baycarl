@@ -21,13 +21,13 @@ const socialLinks: SocialLink[] = [
   {
     name: "Facebook",
     icon: <FaFacebook className="text-xl" />,
-    url: "https://facebook.com",
+    url: "https://www.facebook.com/ade.bamidel.3?mibextid=LQQJ4d",
     color: "hover:bg-[#1877f2]/10 hover:border-[#1877f2]/30",
   },
   {
     name: "LinkedIn",
     icon: <FaLinkedin className="text-xl" />,
-    url: "https://linkedin.com",
+    url: "https://www.linkedin.com/in/victor-baycarl-adekola?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     color: "hover:bg-[#0a66c2]/10 hover:border-[#0a66c2]/30",
   },
   {
@@ -61,7 +61,7 @@ export default function Contact() {
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="connect" className="py-20 md:py-28 px-6" ref={ref}>
+    <section id="connect" className="pt-6 pb-10 px-6" ref={ref}>
       <div className="max-w-3xl mx-auto">
         {/* Section heading */}
         <div className="flex items-center gap-3 mb-6">

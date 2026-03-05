@@ -8,7 +8,7 @@ export default function Gallery() {
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="gallery" className="py-20 md:py-28 px-6" ref={ref}>
+    <section id="gallery" className="pt-6 pb-10 px-6" ref={ref}>
       <div className="max-w-5xl mx-auto">
         {/* Section heading */}
         <div className="flex items-center gap-3 mb-14">
@@ -54,7 +54,7 @@ export default function Gallery() {
             className="relative group rounded-2xl overflow-hidden aspect-[4/3]"
           >
             <img
-              src="/images/profil2.jpg"
+              src="/images/photo.jpg"
               alt="Baycarl - Casual"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
