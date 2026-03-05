@@ -116,7 +116,7 @@ export default function Contact() {
           className="mt-12 text-center"
         >
           <a
-            href="mailto:hello@baycarl.com"
+            href="mailto:admin@baycarl.com"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent/10 border border-accent/20 text-accent font-medium hover:bg-accent/20 hover:border-accent/40 transition-all duration-300"
           >
             <FaEnvelope className="text-sm" />

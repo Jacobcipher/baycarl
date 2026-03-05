@@ -33,6 +33,46 @@ interface Venture {
 
 const ventures: Venture[] = [
   {
+    name: "Baycarl Editing Services",
+    description:
+      "Premium editing and post-production services delivering excellence across multiple markets globally.",
+    logo: "/bes.png",
+    tags: ["Editing", "Post-Production", "Global"],
+    url: "#",
+    dropdownLinks: [
+      {
+        label: "Baycarl Editing Services Website",
+        url: "https://www.baycarleditingservices.com",
+        icon: <FaExternalLinkAlt />,
+      },
+      {
+        label: "Our Portfolio",
+        url: "https://baycarleditingservices.com/portfolio",
+        icon: <FaCamera />,
+      },
+      {
+        label: "WhatsApp",
+        url: "https://wa.me/12145412614",
+        icon: <FaWhatsapp />,
+      },
+      {
+        label: "Facebook",
+        url: "https://www.facebook.com/share/1FSNDpLGbi/?mibextid=wwXIfr",
+        icon: <FaFacebook />,
+      },
+      {
+        label: "Instagram",
+        url: "https://www.instagram.com/baycarleditingservices?igsh=MWJkeHcwOTJwZGtwYg==",
+        icon: <FaInstagram />,
+      },
+      {
+        label: "YouTube",
+        url: "https://youtube.com/@baycarleditingservices?si=-MSzMlWEfzy2b1Mh",
+        icon: <FaYoutube />,
+      },
+    ],
+  },
+  {
     name: "Vendpost LLC",
     description:
       "A digital platform connecting businesses with customers, enabling seamless commerce and client engagement.",
@@ -114,46 +154,6 @@ const ventures: Venture[] = [
         label: "TikTok",
         url: "http://www.tiktok.com/@baycarl_official",
         icon: <FaTiktok />,
-      },
-    ],
-  },
-  {
-    name: "Baycarl Editing Services",
-    description:
-      "Premium editing and post-production services delivering excellence across multiple markets globally.",
-    logo: "/bes.png",
-    tags: ["Editing", "Post-Production", "Global"],
-    url: "#",
-    dropdownLinks: [
-      {
-        label: "Baycarl Editing Services Website",
-        url: "https://www.baycarleditingservices.com",
-        icon: <FaExternalLinkAlt />,
-      },
-      {
-        label: "Our Portfolio",
-        url: "https://baycarleditingservices.com/portfolio",
-        icon: <FaCamera />,
-      },
-      {
-        label: "WhatsApp",
-        url: "https://wa.me/12145412614",
-        icon: <FaWhatsapp />,
-      },
-      {
-        label: "Facebook",
-        url: "https://www.facebook.com/share/1FSNDpLGbi/?mibextid=wwXIfr",
-        icon: <FaFacebook />,
-      },
-      {
-        label: "Instagram",
-        url: "https://www.instagram.com/baycarleditingservices?igsh=MWJkeHcwOTJwZGtwYg==",
-        icon: <FaInstagram />,
-      },
-      {
-        label: "YouTube",
-        url: "https://youtube.com/@baycarleditingservices?si=-MSzMlWEfzy2b1Mh",
-        icon: <FaYoutube />,
       },
     ],
   },
@@ -241,7 +241,7 @@ export default function Ventures() {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-2 gap-5"
+          className="flex flex-col gap-5"
         >
           {ventures.map((venture, index) => {
             const isLast = index === ventures.length - 1 && ventures.length % 2 !== 0;
