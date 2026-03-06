@@ -8,6 +8,7 @@ import {
   FaGlobe,
   FaEnvelope,
   FaArrowRight,
+  FaInstagram,
 } from "react-icons/fa";
 
 interface SocialLink {
@@ -29,6 +30,12 @@ const socialLinks: SocialLink[] = [
     icon: <FaLinkedin className="text-xl" />,
     url: "https://www.linkedin.com/in/victor-baycarl-adekola?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     color: "hover:bg-[#0a66c2]/10 hover:border-[#0a66c2]/30",
+  },
+  {
+    name: "Instagram",
+    icon: <FaInstagram className="text-xl" />,
+    url: "https://www.instagram.com/victor_baycarl?igsh=ZGJuZWlmMnl5MG00",
+    color: "hover:bg-[#e1306c]/10 hover:border-[#e1306c]/30",
   },
   {
     name: "Baycarl.com",
@@ -78,7 +85,7 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           className="text-text-secondary text-center mb-12 max-w-md mx-auto"
         >
-          Find me across the web. Let&apos;s build something meaningful together.
+          Find me across the web&hellip; Let&apos;s connect
         </motion.p>
 
         {/* Social links */}
